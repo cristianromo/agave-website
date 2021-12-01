@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,600');
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    background: #E6F4F1;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    font-size: .9em;
+    line-height: 1.6em;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.intro-text{
+    margin-top: 5em;
+}
+
+.container-1{
+    text-align: center;
+    width: 100%;
+}
+
+.logo{
+    max-width: 5em;
+    vertical-align: middle;
+    float: left;
+}
+
+nav{
+    justify-content: space-between;
+}
+
+.home{
+    font-size: 1.75em;
+    display: inline-flex;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    font-variant: small-caps;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: transparent;
+    max-height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    background-color: rgba(143, 183, 182, 0.9);
+    /* 8FB6B6 */
+}
+
+header a:hover{
+    color: inherit; 
+}
+
+header nav{
+    align-items: right;
+    font-size: 0.8em;
+    text-transform: capitalize;
+}
+
+.menu{
+    margin-right: 75%;
+    float: right;
+}
+
+
+.landing{
+    position: relative;
+}
+
+.landing img{
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+    max-height: 50em;
+    position: relative;
+    z-index: 9;
+    opacity: 50%;
+}
+
+
+.landing-text{
+    position: absolute;
+    margin: auto;
+    text-align: left;
+    left: 50%;
+    top: 35%; /* Adjust this value to move the positioned div up and down */ 
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+}
+
+h1{
+    color: black;
+    text-align: left;
+    font-size: 1.75em;
+}
+
+.primary-button{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #005C64;
+    border: none;
+    opacity: 90%;
+    padding: .5em;
+    font-size: 1em;
+    text-align: center;
+}
+
+ a:hover{
+     color:inherit
+ }
+
+
+.landing .primary-button{
+    margin-top: 4em;
+}
+
+.options-container{
+    margin: 3em auto;
+    text-align: center;
+}
+
+.options-container h3{
+    font-variant: small-caps;
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: left;
+    margin-bottom: 0.5em;
+}
+
+.options-icon{
+    float: left;
+    width: 2.75em;
+}
+
+.options p{ 
+    font-size: 1em;
+    text-align: justify;
+    margin-top: .5em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.featured-container{
+    margin-left: 7em;
+    margin-right: 7em;
+}
+
+.featured-container .container-1 ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.featured-container .container-1 ul > * {
+    flex: 1 1 50%;
+}
+
+.featured-container h3{
+    font-size: 2.5em;
+    font-variant: small-caps;
+    font-weight: lighter;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+.featured-container span{
+    font-size: 1.2em;
+}
+
+.listing{
+    background:#005C64;
+    text-align: center;
+    font-size: 1.25em;
+    margin: 0 1em 3em 1em;
+    border-radius: 0.5em;
+    color: white;
+}
+
+.house-price{
+    font-size: 1.3em;
+}
+
+.house-pic{
+    width: 100%;
+    padding-bottom: 1em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+}
+
+footer{
+    background: #8FB7B6;
+    margin-top: auto;
+    max-width: 100%;
+}
+
+footer ul{
+    justify-content: space-between;
+    margin: 0;
+    vertical-align: middle;
+}
+
+footer ul li{
+    margin-top: 1em;
+}
+
+.footer-logo{
+    width:100px;
+    opacity: 50%;
+    margin-top: 1em;
+}
+
+nav.menu{
+    display: block;
+}
+
+nav ul{
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    top: 0;
+    width: 0;
+    background: linear-gradient(#8FB7B6, #E6F4F1);
+    height: 100vh;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 1.3em;
+    padding: 4.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+.exit-btn{
+    margin-top: 3em;
+    margin-right: 1.5em;
+    float: right;
+    cursor: pointer;
+}
+
+.exit-btn img{
+    width: 2.5em;    
+}
+
+
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+form .btn-primary{
+    background-color: #005C64;
+    border: #005C64;
+}
+
+form .btn-primary:hover{
+    background-color: #8FB7B6;
+}
+
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  
+  .item span {
+    font-style: normal;
+  }
+
+
+/* THIS IS FOR INVALID(REQUIRED) INPUTS SHOWING RED AFTER SUBMITTING 
+form .form-control{
+    border: 1px solid black;
+}
+.form-control,
+.form-control:focus{
+    border: 1px solid black;
+}
+
+form .form-control:required:valid {
+    border: 1px solid black;
+}
+form .form-control:required:invalid{
+    border-color: red;
+}*/
+
+
+/* smallest screen change */
+@media only screen and (min-width: 770px){
+    .hide-mobile{
+        display: contents;
+    }
+
+    .background{
+       max-height: 800px;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    nav ul{
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+    }
+
+    nav ul li{
+        float: left;
+    }
+
+    nav ul li a{
+        color: black;
+        font-size: 1em;
+        background-color: inherit;
+        text-align: left;
+        padding: 0.5em;
+    }
+
+    .options-container .container{
+        margin-top: 2em;
+        display: flex;
+   }
+
+   .options-container .container > * {
+       flex-basis: 100%;
+   }
+
+   .featured-container .container-1 ul li{
+        font-size: 1.1em;
+    }
+
+   .featured-container .container-1 ul > * {
+        flex: 1 1 45%;
+    }
+
+   .listing{
+       width: 45%;
+   }
+
+   .listing p{
+        line-height: .7em;
+    }
+}
+/* middle screen change */
+
+@media only screen and (min-width: 1080px){
+    nav ul li a{
+        font-size: 1.25em;
+        padding-right: 1.5em;
+        transition: 0.3s;
+    }
+
+    .featured-container {
+        text-align: center;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .featured-container .container-1 ul{
+        position: inherit;
+        text-align: center;
+   }
+
+   .featured-container .container-1 ul li p{
+        line-height: 1.25em;
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+    }
+
+   .listing .house-price{
+       font-size: 1.25em;
+   }
+}
+
+/* max screen size */
+
+@media only screen and (min-width: 1600px){
+    nav ul li a{
+        font-size: 1.25em;
+        margin-right: 1.75em;
+        transition: 0.3s;
+    }
+
+    .options-container {
+        text-align: center;
+        margin: 2em 2em;
+        left: 0;
+        right: 0;
+    }
+
+    .options-container .container{
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+   }
+
+    .options{
+        max-width: 33.33%;
+        width: 100%;
+        min-height: 1px;
+    }
+
+    .featured-container .container-1 ul > * {
+        flex: 1 1 20%;
+    }
+
+    .featured-container .container-1 ul li p{
+        line-height: 1.25em;
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+    }
+
+}

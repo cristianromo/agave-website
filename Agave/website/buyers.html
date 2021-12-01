@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy with us - Agave Real Estate</title>
+    <link rel="icon" href="images/Agave_Logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sellers.css">
+
+</head>
+<body>
+    <div class ="header-container mb-4">
+        <header class="d-flex flex-row flex-wrap justify-content-between align-items-center py-3">
+            <a href="index.html">
+                <img src="images/Agave_Logo.png" alt="Agave Logo" class="logo p-2"> <p class="home py-2"> Agave Real Estate Group</p>
+            </a>
+        
+            <nav>
+                <a href="#" class="hide-desktop ">
+                    <img src="images/Hamburger_Menu.svg" onclick="openNav()" alt="toggle menu" class="menu" id="menu">
+                </a>
+            
+                <ul class ="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop closebtn" onclick="closeNav()"> <img src="images/icons/exit.svg" alt="exit menu"></li>
+                    <li><a href= "properties.html">Properties</a></li>
+                    <li><a href= "buyers.html">Buyers</a></li>
+                    <li><a href= "sellers.html">Sellers</a></li>
+                    <li><a href= "about.html">About Us</a></li>
+                    <li><a href= "contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="intro-text">
+        <div class="container mb-4">
+            <p>
+                Looking to buy a home in the Sacramento area? <br>
+                We'd love to help! <br>
+                <span>Let us know what you're looking for and what you have been preapproved for. <br>
+                    This will help us determine the best possible options for your needs!
+                </span>
+            </p>
+        </div>
+    </div>
+
+    <div class="selling-info">
+        <div class="container">
+            <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwTOvGWWqxZR2Gj-hmJ5utbsHmA-mKw8iImojL4lw/exec">
+                <p>About You</p>
+                <!-- Bootstrap: -->
+                <div class="row g-6 mb-3">
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input class="form-control first-name" name ="first-name" required type="text" placeholder="First Name"  id="floatingFirstName">
+                            <label for="floatingFirstName">First Name</label>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input class="form-control last-name" name="last-name" required type="text"  placeholder="Last Name" id="floatingLastName">
+                            <label for="floatingLastName">Last Name</label>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-6 mb-3">
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input class="form-control" name ="email" type="email" required placeholder="example@email.com" id="floatingEmailAddress">
+                            <label for="floatingEmailAddress">Email Address</label>
+                            <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                        </div> 
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input class="form-control col" type="number" name ="phone-number" required placeholder="Phone Number" id="floatingPhoneNumber" max="9999999999" >
+                            <label for="floatingPhoneNumber">Phone Number</label>
+                            <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                        </div> 
+                    </div>
+                </div>
+                
+                <div class="row g-6 mb-4">
+                    <div class="col-md-12">
+                        <div class="form-floating">
+                            <select class="form-control form-select contact-type" name ="contact-type" required id="floatingContactType" aria-label="Floating label select contact-type">
+                                <option disabled selected value> -- Select an Option -- </option>
+                                <option value="email">Email</option>
+                                <option value="phone-number">Phone</option>
+                            </select>
+                        <label for="floatingBaths">Preferred contact</label>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                    </div>
+                </div>
+            
+            <p>Property Info</p>
+            <!-- Property Info -->
+            <div class="row g-6 mb-3">
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input class="form-control" name ="street-address" required placeholder="Street Address" id="floatingAddress">
+                        <label for="floatingAddress">Where do you want to move?</label>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+                    <div class="col-md-3">
+                            <div class="form-floating">
+                                <select class="form-control form-select num-beds" name ="num-beds" required id="floatingBeds" aria-label="Floating label select num-beds">                                
+                                    <option disabled selected value> -- Select an Option -- </option>
+                                    <option value="0-1-beds">0-1</option>
+                                    <option value="2-beds">2</option>
+                                    <option value="3-beds">3</option>
+                                    <option value="4-beds">4</option>
+                                    <option value="5-beds">5</option>
+                                    <option value="6+-beds">6+</option>
+                                </select>
+                                <label for="floatingBaths"># of bedrooms</label>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="col-md"> 
+                            <div class="form-floating">
+                                <select class="form-control form-select num-baths" name ="num-baths" id="floatingBaths" aria-label="Floating label select num-baths">
+                                    <option disabled selected value> -- Select an Option -- </option>
+                                    <option value="1-baths">1</option>
+                                    <option value="2-baths">2</option>
+                                    <option value="3-baths">3</option>
+                                    <option value="4-baths">4</option>
+                                    <option value="5-baths">5</option>
+                                    <option value="6+-baths">6+</option>
+                                </select>
+                                <label for="floatingBaths"># of bathrooms</label>
+                            </div>
+                        </div> 
+                    </div>
+                </div>           
+
+            <div class="row g-6 mb-3">
+                <div class="col-md">
+                    <div class="form-floating">
+                        <select class="form-control form-select home-size" name ="home-size"  id="floatingHomeSize" aria-label="Floating label select home-size">
+                            <option disabled selected value> -- Select an Option -- </option>
+                            <option value="Less than 1,000 sqft">Less than 1,000 sqft</option>
+                            <option value="1,000-1,500 sqft">1,000-1,500 sqft</option>
+                            <option value="1,500-2,000 sqft">1,500-2,000 sqft</option>
+                            <option value="2,000-2,500 sqft">2,000-2,500 sqft</option>
+                            <option value="2,500-3,000 sqft">2,500-3,000 sqft</option>
+                            <option value="Above 3,000 sqft">Above 3,000 sqft</option>
+                        </select>
+                        <label for="floatingHomeSize">Home Size</label>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="form-floating">
+                        <select class="form-control form-select est-value" name ="est-value" required id="floatingValue" aria-label="Floating label select home-value">
+                        <option disabled selected value>-- Select an Option --</option>
+                        <option value="Under $100,000">Under $100,000</option>
+                        <option value="$100,000-$200,000">$100,000-$200,000</option>
+                        <option value="$200,000-$300,000">$200,000-$300,000</option>
+                        <option value="$400,000-$500,000">$400,000-$500,000</option>
+                        <option value="$500,000-$600,000">$500,000-$600,000</option>
+                        <option value="$600,000-$700,000">$600,000-$700,000</option>
+                        <option value="$700,000-$800,00">$700,000-$800,000</option>
+                        <option value="$800,000-$900,000">$800,000-$900,000</option>
+                        <option value="$900,000-$1,000,000">$900,000-$1,000,000</option>
+                        <option value="$1,000,000-$1,500,000">$1,000,000-$1,500,000</option>
+                        <option value="$1,500,000-$2,000,000">$1,500,000-$2,000,000</option>
+                        <option value="$2,000,000+">$2,000,000+</option>
+                        </select>
+                        <label for="floatingValue">Price Range</label>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="row g-6 mb-3">
+                <div class="col-md">
+                    <div class="form-floating">
+                        <select class="form-control form-select selling-time" name ="selling-time" id="floatingTimeFrame" aria-label="Floating label select time-frame">
+                        <option disabled selected value>-- Select an Option --</option>
+                        <option value="less than 1 month">Less than 1 month </option>
+                        <option value="1-3 months">1-3 months</option>
+                        <option value="3-6 months">3-6 months</option>
+                        <option value="6+ months">Over 6 months</option>
+                        </select>
+                        <label for="floatingValue">How long have you been searching?</label>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="form-floating">
+                        <select class="form-control form-select agent" name ="agent" required id="floatingAgent" aria-label="Floating label select agent">
+                        <option disabled selected value>-- Select an Option --</option>
+                        <option value="agent-yes">Yes</option>
+                        <option value="agent-no">No</option>
+                        </select>
+                        <label for="floatingValue">Are you working with an agent?</label>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+
+               
+            </div>
+
+            <div class="row g-6 mb-3">
+                <div class="col-md">
+                    <div class="form-floating">
+                        <select class="form-control form-select property-type" name ="property-type" required id="floatingPropType" aria-label="Floating label select property-type">
+                        <option disabled selected value>-- Select an Option --</option>
+                        <option value="property-Single">Single-Family Home</option>
+                        <option value="property-Multi-Family">Multi-Family Home</option>
+                        <option value="property-Condo">Condo</option>
+                        <option value="property-Townhouse">Townhouse</option>
+                        <option value="property-Invesment">Investment Opportunity</option>
+                        </select>
+                        <label for="floatingValue">Type of Property?</label>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+
+               
+            </div>
+
+                <div class="form-floating mb-4">
+                    <textarea class="form-control" name ="add-info" placeholder="Leave a comment here" id="details" style="height: 100px"></textarea>
+                    <label for="details">Anything else that you're looking for?</label>
+                    <div class="valid-feedback"></div>
+                </div>
+
+                <fieldset class="pure-group honeypot-field">
+                    <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                    <input id="honeypot" type="text" name="honeypot" value=""/>
+                  </fieldset>
+
+                <input type="submit" onclick="this.submit(form), this.disabled=true, submit.value='Submitting...', window.location.href='completed.html';" value="Submit" class="btn btn-primary mb-4">
+            
+
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <ul class="footer-links">
+                    <li>Agave Real Estate Group is a family-owned real estate team.</li>
+                    <li>Alex Romo | CalBRE ######## | (###) ###-####</li>
+                    <li>Properties | Buyers | Sellers | About Us </li>
+                    <li>Want to know more? Contact Us</li>
+                </ul>
+                <img src="images/Agave_Logo.png" alt="logo" class="footer-logo">
+            </div>
+        </div>
+    </footer>
+    <script src="myscripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
+
+</body>
+</html>

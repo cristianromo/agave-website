@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell with us - Agave Real Estate</title>
+    <link rel="icon" href="images/Agave_Logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sellers.css">
+
+</head>
+<body>
+    <div class ="header-container mb-4">
+        <header class="d-flex flex-row flex-wrap justify-content-between align-items-center py-3">
+            <a href="index.html">
+                <img src="images/Agave_Logo.png" alt="Agave Logo" class="logo p-2"> <p class="home py-2"> Agave Real Estate Group</p>
+            </a>
+        
+            <nav>
+                <a href="#" class="hide-desktop ">
+                    <img src="images/Hamburger_Menu.svg" onclick="openNav()" alt="toggle menu" class="menu" id="menu">
+                </a>
+            
+                <ul class ="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop closebtn" onclick="closeNav()"> <img src="images/icons/exit.svg" alt="exit menu"></li>
+                    <li><a href= "properties.html">Properties</a></li>
+                    <li><a href= "buyers.html">Buyers</a></li>
+                    <li><a href= "sellers.html">Sellers</a></li>
+                    <li><a href= "about.html">About Us</a></li>
+                    <li><a href= "contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="intro-text">
+        <div class="container mb-4">
+            <p>
+               Contact us for any of your real estate needs today <br>
+                <span> 
+                Send us a message to inquire about anything; from the pre-approval process to investment needs!</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="selling-info">
+        <div class="container">
+            <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwTOvGWWqxZR2Gj-hmJ5utbsHmA-mKw8iImojL4lw/exec">
+                <!-- Bootstrap: -->
+                <div class="row g-6 mb-3">
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input class="form-control first-name" name ="first-name" required type="text" placeholder="First Name"  id="floatingFirstName">
+                            <label for="floatingFirstName">First Name</label>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input class="form-control last-name" name="last-name" required type="text"  placeholder="Last Name" id="floatingLastName">
+                            <label for="floatingLastName">Last Name</label>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-6 mb-3">
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input class="form-control" name ="email" type="email" required placeholder="example@email.com" id="floatingEmailAddress">
+                            <label for="floatingEmailAddress">Email Address</label>
+                            <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                        </div> 
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input class="form-control col" type="number" name ="phone-number" required placeholder="Phone Number" id="floatingPhoneNumber" max="9999999999" >
+                            <label for="floatingPhoneNumber">Phone Number</label>
+                            <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                        </div> 
+                    </div>
+                </div>
+                
+                <div class="row g-6 mb-4">
+                    <div class="col-md-12">
+                        <div class="form-floating">
+                            <select class="form-select contact-type" name ="contact-type" required id="floatingContactType" aria-label="Floating label select contact-type">
+                                <option disabled selected value> -- Select an Option -- </option>
+                                <option value="email">Email</option>
+                                <option value="phone-number">Phone</option>
+                            </select>
+                            <label for="floatingContactType">Preferred contact</label>
+
+                        </div>
+                    </div>
+
+                </div>
+            
+
+                <div class="form-floating mb-4">
+                    <textarea class="form-control" name ="add-info" placeholder="Leave a comment here" id="details" style="height: 100px"></textarea>
+                    <label for="details">Message</label>
+                    <div class="valid-feedback"></div>
+                </div>
+
+                <fieldset class="pure-group honeypot-field">
+                    <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                    <input id="honeypot" type="text" name="honeypot" value=""/>
+                  </fieldset>
+
+                <input type="submit" onclick="this.submit(form), this.disabled=true, submit.value='Submitting...', window.location.href='completed.html';" value="Submit" class="btn btn-primary mb-4">
+
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <ul class="footer-links">
+                    <li>Agave Real Estate Group is a family-owned real estate team.</li>
+                    <li>Alex Romo | CalBRE ######## | (###) ###-####</li>
+                    <li>Properties | Buyers | Sellers | About Us </li>
+                    <li>Want to know more? Contact Us</li>
+                </ul>
+                <img src="images/Agave_Logo.png" alt="logo" class="footer-logo">
+            </div>
+        </div>
+    </footer>
+    <script src="myscripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Agave Real Estate</title>
+    <link rel="icon" href="images/Agave_Logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sellers.css">
+</head>
+<body>
+    <div class ="header-container">
+        <header class="d-flex flex-row flex-wrap justify-content-between align-items-center py-3">
+            <a href="index.html">
+                <img src="images/Agave_Logo.png" alt="Agave Logo" class="logo p-2"> <p class="home py-2"> Agave Real Estate Group</p>
+            </a>
+        
+            <nav>
+                <a href="#" class="hide-desktop ">
+                    <img src="images/Hamburger_Menu.svg" onclick="openNav()" alt="toggle menu" class="menu" id="menu">
+                </a>
+            
+                <ul class ="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop closebtn" onclick="closeNav()"> <img src="images/icons/exit.svg" alt="exit menu"></li>
+                    <li><a href= "properties.html">Properties</a></li>
+                    <li><a href= "buyers.html">Buyers</a></li>
+                    <li><a href= "sellers.html">Sellers</a></li>
+                    <li><a href= "about.html">About Us</a></li>
+                    <li><a href= "contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="landing">
+            <img src="images/home.jpg" alt="agave background" class="background">
+            <h1 class="landing-text">Your home. Your way. <br> Agave.</h1>
+            <a href="" class="primary-button landing-text">Start your search</a>
+        </section>
+    </div>
+
+    <div class="options-container">
+        <div class="container">
+            <div class="options">
+                <img src="images/icons/properties-icon.png" alt="Properties icon" class="options-icon">
+                <h3>Properties</h3>
+                <p class="options-text">Whether you are looking for your dream home or just the next phase in life, search the beautiful Sacramento Valley here.</p>
+                <a href="#" class="primary-button options-text ">View all properties</a>
+            </div>
+            <div class="options">
+                <img src="images/icons/buyers-icon.png" alt="Properties icon" class="options-icon">
+                <h3>Buyers</h3>
+                <p class="options-text">Contact us today so we can help you get started looking for your new home. 
+                </p>
+                <a href="buyers.html" class="primary-button options-text">Find your new home</a>
+            </div>
+            <div class="options">
+                <img src="images/icons/sellers-icon.png" alt="Properties icon" class="options-icon">
+                <h3>Sellers</h3>
+                <p class="options-text">Selling your home? Instantly find out the value of your home and receive a full market report of your area to guide you in your big decisions.</p>
+                <a href= "sellers.html" class="primary-button options-text">Sell your home</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="featured-container">
+        <div class="container-1">
+            <h2>Featured Properties</h2>
+            <ul>
+                <li class="listing">
+                    <img src="#" alt="house-pic" class="house-pic">
+                    <p class="house-price">$637,750</p>
+                    <p>4 beds | 3 baths | 1983 sq ft</p>
+                    <p>Address, State, ZIP</p>
+                </li>
+                <li class="listing">
+                    <img src="#" alt="house-pic" class="house-pic">
+                    <p class="house-price">$769,900</p>
+                    <p>5 beds | 3.5 baths | 2920 sq ft </p>
+                    <p>Address, State, ZIP</p>
+                </li>
+                <li class="listing">
+                    <img src="#" alt="house-pic" class="house-pic">
+                    <p class="house-price">$637,750</p>
+                    <p>4 beds | 3 baths | 1983 sq ft</p>
+                    <p>Address, State, ZIP</p>
+                </li>
+                <li class="listing">
+                    <img src="#" alt="house-pic" class="house-pic">
+                    <p class="house-price">$769,900</p>
+                    <p>5 beds | 3.5 baths | 2920 sq ft </p>
+                    <p>Address, State, ZIP</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container-1">
+                <ul class="footer-links">
+                    <li>Agave Real Estate Group is a family-owned real estate team.</li>
+                    <li>Alex Romo | CalBRE ######## | (###) ###-####</li>
+                    <li>Properties | Buyers | Sellers | About Us </li>
+                    <li>Want to know more? Contact Us</li>
+                </ul>
+            <img src="images/Agave_Logo.png" alt="logo" class="footer-logo">
+            </div>
+        </div>
+    </footer>
+    <script src="myscripts.js"></script>
+</body>
+</html>
